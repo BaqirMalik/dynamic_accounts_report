@@ -6,7 +6,7 @@
             <t t-set="data_report_dpi" t-value="110"/>
             <t t-call="web.internal_layout">
 
-                <div class="custom_header" style="border-bottom:1px solid #000; padding-bottom:20px; margin-top:-20px">
+                <div class="custom_header" style="border-bottom:1px solid #000; padding-bottom:20px;">
 
                     <div class="row">
 
@@ -15,7 +15,7 @@
                                 <img t-att-src="'/logo.png?company=%s' % (company.id or 0)"
                                      style="padding: 0px; margin: 0 auto; height: auto; max-width: 250px; max-height: 250px;"
                                      t-att-alt="'%s' % company.name"/>
-                                <h1 t-esc="user.company_id.name"/>
+
                             </center>
                         </div>
 
